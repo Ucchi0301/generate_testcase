@@ -1,0 +1,44 @@
+{
+    "count": 5,
+    "fields": {
+      "name": {
+        "source": "ai",
+        "prompt": "ありそうな車の名前"
+      },
+      "company": {
+        "source": "object",
+        "fields": {
+          "name": {
+            "source": "ai",
+            "prompt": "ありそうな自動車メーカー名"
+          },
+          "address": {
+            "source": "ai",
+            "prompt": "日本のありそうな住所"
+          }
+        }
+      },
+      "price": {
+        "source": "random",
+        "type": "num",
+        "range": [1000000, 5000000]
+      },
+      "is_available": {
+        "source": "random",
+        "type": "bool"
+      },
+      "launch_year": {
+        "source": "random",
+        "type": "num",
+        "range": [2010, 2025]
+      },
+      "uuid": {
+        "source": "random",
+        "type": "uuid"
+      },
+      "category": {
+        "source": "static",
+        "value": "乗用車"
+      }
+    }
+  }
